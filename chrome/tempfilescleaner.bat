@@ -5,4 +5,4 @@ for %%o in (*.tmp) do (
 	set /A count=count + 1 
 )
 echo %count%
-if %count%==0 (echo "sem arquivos temporarios") else (del "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\*.tmp" /f /q)
+if %count%==0 (echo "no temporary files") else (del "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\*.tmp" /f /q)
